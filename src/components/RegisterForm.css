@@ -1,0 +1,70 @@
+.formContainers {
+    display: flex;
+    flex-direction: column;
+}
+
+.registerFormInputs {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*
+.registerFormTitle {
+    border: 2px solid black;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+
+
+.labels {
+    width: 100px;
+    display: inline-block;
+    text-align: left;
+}
+
+.genderContainer {
+    display: flex;
+}
+
+.maleFemaleContainer {
+    margin-right: 30px;
+}
+
+.DateOfBirthBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.birthdaySelects {
+    display:flex;
+    justify-content: flex-start;
+}
+
+.Dob {
+    height: 30px;
+    width: 100%;
+    border: 1px solid #9b9b9b;
+    border-radius: 3px;
+    font-size: 80%; 
+}
+
+select {
+
+}
+
+.DobDayBox {
+    margin-right: 8px;
+}
+
+.DobDayMonth {
+    margin-right: 8px;
+}
+
+.checkboxAndSubmitButton {
+    border: 2px solid black;
+}
+*/
