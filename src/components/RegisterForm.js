@@ -8,15 +8,19 @@ const RegisterForm = () => {
             <form className="formContainers">
                 <div className="registerFormInputs">
                     <div className="inputsLeft">
-                        <label htmlFor="firstName" className="labels">FirstName</label>
-                            <input id="firstName" type="text"/>                        
-                        <label htmlFor="lastName" className="labels">LastName</label>
-                            <input id="lastName" type="text"/>
-                        <div className="genderContainer">
+                        <div className="labelsWithInputs">
+                            <label htmlFor="firstName" className="labels">FirstName</label>
+                                <input id="firstName" type="text"/>   
+                        </div>  
+                        <div className="labelsWithInputs">                 
+                            <label htmlFor="lastName" className="labels">LastName</label>
+                                <input id="lastName" type="text"/>
+                        </div>  
+                        <div className="genderContainer labelsWithInputs">
                             <div>
                                 <label className="labels">Gender</label>
                             </div>
-                            <div className="maleFemaleContainer">
+                            <div className="maleFemaleContainer maleMargin">
                                 <label htmlFor="male" className="maleFemaleText">Male</label>
                                 <input type="radio" 
                                 id="gender" 
@@ -170,13 +174,11 @@ const RegisterForm = () => {
                         how many dogs you have?
                         dou you live in apartman or house?
                     </div>
-                </div>
-                <div>
-                <div className="checkboxAndSubmitButton">
-                    i've read and accept the terms & conditions
-                    register button + tap icon
-                </div>
-                </div>
+                    </div>       
+                    <div className="checkboxAndSubmitButton">
+                            i've read and accept the terms & conditions
+                            register button + tap icon
+                    </div>
             </form>
         </div>
     )
