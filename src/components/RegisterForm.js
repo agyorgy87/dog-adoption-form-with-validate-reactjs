@@ -1,20 +1,33 @@
 import React from 'react';
 import './RegisterForm.css';
+import useForm from '../Hooks/useForm';
 
 const RegisterForm = () => {
 
+    const formRegister = () => {
+
+        console.log("callback function when form is submitted!");
+        console.log("form values", values);
+    }
+
+    const {handleChange, values, errors, handleSubmit} = useForm(formRegister);
+
+
     return (
         <div>
-            <form className="formContainers">
+            <form className="formContainers" onSubmit={handleSubmit}>
                 <div className="registerFormInputs">
                     <div className="inputsLeft">
                         <div className="dataContainers">
                             <label htmlFor="firstName" className="labels">FIRST NAME</label>
-                                <input id="firstName" className="defaultInputStyle" type="text"/>   
-                        </div>  
+                                <input id="firstName" type="text" name="firstname" className="defaultInputStyle" onChange={handleChange}/>   
+                                { errors.firstname && <h5>{errors.firstname}</h5>} 
+                        </div>
+                         
                         <div className="dataContainers">                 
-                            <label htmlFor="lastName" className="labels">LAST NAME</label>
-                                <input id="lastName" className="defaultInputStyle" type="text"/>
+                            <label htmlFor="lastName" className="labels">LAST NAME</label>{ errors.lastname && <h5>{errors.lastname}</h5>} 
+                                <input id="lastName" className="defaultInputStyle" type="text" onChange={handleChange}/>
+                                
                         </div>  
                         <div className="genderContainer dataContainers">
                             <div>
@@ -219,11 +232,11 @@ const RegisterForm = () => {
                             <h5 className="termsAndConditionsText">i've read and accept the <a href="https://termify.io/terms-and-conditions-generator?gclid=CjwKCAjwm8WZBhBUEiwA178UnCikvuNxl27UUgfH_HYhXYLxKiKzUP_xjgJydLkYVasB39JoTGtH7BoCnzcQAvD_BwE">terms & conditions</a></h5>
                         </div>
                     </div>              
-                        <button className="registrationButton">REGISTRATION</button>
+                        <button type="submit" value="submit" className="registrationButton">REGISTRATION</button>
                 </div>
             </form>
         </div>
     )
 }
 
-export default RegisterForm
+export default RegisterForm;
