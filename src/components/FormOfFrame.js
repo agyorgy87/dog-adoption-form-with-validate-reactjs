@@ -10,7 +10,7 @@ function FormFrame () {
                 <img src={dogphoto} className="imageStyle" alt="dog"/>
             </div>
             <div className="placeOfTheFormTitle">
-                <h1 className="formTitle">Registration For Adoption</h1>
+                <h1 className="formTitle">REGISTRATION FOR ADOPTION</h1>
             </div>
             <div className="placeOfTheData">
                 <RegisterForm/>

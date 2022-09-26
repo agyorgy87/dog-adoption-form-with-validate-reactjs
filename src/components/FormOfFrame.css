@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(11, minmax(70px, 120px));
     grid-template-rows: repeat(6, minmax(70px, 100px));
-    border: 5px solid rgb(181, 84, 0);
+    border: 8px solid rgb(34, 40, 49);
     border-radius: 5px;
 }
 
@@ -20,6 +20,10 @@
     height: 100%;
     width: 100%;
     transform: scaleX(-1);
+    border-left: 5px solid rgb(34, 40, 49);
+    margin-right: 5px;
+   
+    
 }
 
 .placeOfTheFormTitle{
@@ -37,11 +41,11 @@
 }
 
 .placeOfTheData {
-    background-color: #EEEEEE;
     grid-column-start: 5;
     grid-column-end: 12;
     grid-row-start: 2;
     grid-row-end: 7;
+    background-color: #EEEEEE;
 }
 
 

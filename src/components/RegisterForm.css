@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
 .formContainers {
     display: flex;
     flex-direction: column;
@@ -13,38 +15,43 @@
     width: 50%;
     height: 350px;
     display: flex;
-    flex-direction: column
-
+    flex-direction: column; 
+    padding-left: 30px;
 }
 
 .inputsRight {
     width: 50%;
 }
 
-.labelsWithInputs {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+.dataContainers {
+    margin-top: 1rem;
 }
 
 .labels {
+    display: block;
     font-size: 30px;
+    color: #393E46;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-.genderContainer {
+.firsLastNameInput {
+    height: 1.5rem;
+    width: 20rem;
+}
+
+.optionalRadioBoxes {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
-.maleMargin {
-    margin-left: 40px;
+.maleRadioButton{
+    margin-right: 20px;
 }
 
-/*
-
-.DateOfBirthBox {
-    display: flex;
-    justify-content: space-between;
+.maleFemaleText {
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #393E46;
 }
 
 .birthdaySelects {
@@ -52,23 +59,23 @@
     justify-content: flex-start;
 }
 
-.Dob {
+.dobSelects {
     height: 30px;
-    width: 100%;
+    width: 150%;
     border: 1px solid #9b9b9b;
     border-radius: 3px;
     font-size: 80%; 
+    outline: none;
 }
 
-.DobDayBox {
-    margin-right: 8px;
+.dobDayBox {
+    margin-right: 30px;
 }
 
-.DobDayMonth {
-    margin-right: 8px;
+.dobDayMonth {
+    margin-right: 50px;
 }
 
-.checkboxAndSubmitButton {
-    border: 2px solid black;
-}
-*/
+
+
+
