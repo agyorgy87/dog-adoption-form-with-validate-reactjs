@@ -35,7 +35,7 @@ const RegisterForm = () => {
                                     <input type="radio" 
                                     id="fender" 
                                     name="gender" 
-                                    value="female"
+                                    value="female"                                   
                                     />
                                 </div>
                             </div>
@@ -172,43 +172,47 @@ const RegisterForm = () => {
                     <div className="inputsRight">
                         <div className="dataContainers">
                             <label htmlFor="phone" className="labels">Phone Number</label>
-                                <input id="phone" className="defaultInputStyle" type="number"/>   
+                                <input id="phone" className="defaultInputStyle" type="text"/>   
                         </div>
                         <div className="dataContainers">
                             <label htmlFor="phone" className="labels">Email Address</label>
                                 <input id="phone" className="defaultInputStyle" type="email"/>   
                         </div>
                         <div className="dataContainers">
-                            <label className="labels">How many dogs do you have?</label>
+                            <label className="labels labelMargin">How many dogs do you have?</label>
+                                <div className="labelSelectdistance">
                                     <select 
                                     className="numberOfDogAndPlaceSelect" 
                                     id="dogNumberQuestion" 
                                     name="dogNumberQuestion"
                                     >
-                                        <option value="none">---</option>
+                                        <option value="none">-</option>
                                         <option value="0">0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3 or more</option>  
-                                    </select>                          
+                                    </select>   
+                                </div>                                    
                         </div>
                         <div className="dataContainers">
-                            <label className="labels">Do you live in flat or house?</label>
+                            <label className="labels labelMargin">Do you live in flat or house?</label>
+                                <div className="labelSelectdistance">
                                     <select 
                                     className="numberOfDogAndPlaceSelect" 
                                     id="dogNumberQuestion" 
                                     name="dogNumberQuestion"
                                     >
-                                        <option value="none">---</option>
+                                        <option value="none">-</option>
                                         <option value="flat">Flat</option>
                                         <option value="house">House</option>                                    
-                                    </select>                          
+                                    </select>   
+                                </div>                       
                         </div>
                     </div>
                 </div>       
                 <div className="checkboxAndSubmitButton">
-                            <h5 className="termsAndConditionsText">i've read and accept the <a href="https://termify.io/terms-and-conditions-generator?gclid=CjwKCAjwm8WZBhBUEiwA178UnCikvuNxl27UUgfH_HYhXYLxKiKzUP_xjgJydLkYVasB39JoTGtH7BoCnzcQAvD_BwE">terms & conditions</a></h5>
-                            register button + tap icon
+                    <h5 className="termsAndConditionsText">i've read and accept the <a href="https://termify.io/terms-and-conditions-generator?gclid=CjwKCAjwm8WZBhBUEiwA178UnCikvuNxl27UUgfH_HYhXYLxKiKzUP_xjgJydLkYVasB39JoTGtH7BoCnzcQAvD_BwE">terms & conditions</a></h5>
+                        <button className="registrationButton">Registration</button>
                 </div>
             </form>
         </div>
