@@ -115,12 +115,12 @@
 }
 
 .labelSelectdistance {
-    margin-top: 1rem;
+    margin-top: 0.8rem;
 }
 
 .numberOfDogAndPlaceSelect {
     outline: none;
-    height: 1.8rem;
+    height: 2rem;
     width: 21rem;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 600;
@@ -134,11 +134,22 @@
     border-color: #d76a17;
 }
 
-.checkboxAndSubmitButton {
+.checkboxAndSubmitButtonContainer {
     display:flex;
     flex-direction: column;
     justify-content: center;
-align-items: center;
+    align-items: center;
+}
+
+.checkboxAndTextContiner {
+    display: flex;
+    justify-content: center;
+}
+
+.checkboxContainer {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
 .termsAndConditionsText {
@@ -149,7 +160,7 @@ align-items: center;
 .registrationButton {
     font-size: 1.5rem;
     height: 3rem;
-    width: 10rem;
+    width: 14rem;
     background-color: rgb(34, 40, 49);
     border: none;
     border-radius: 0.3rem;
@@ -158,6 +169,7 @@ align-items: center;
 
 .registrationButton:hover {
     background-color: #d76a17;
+    color: rgb(34, 40, 49);
 }
 
 

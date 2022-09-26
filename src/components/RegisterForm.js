@@ -9,20 +9,20 @@ const RegisterForm = () => {
                 <div className="registerFormInputs">
                     <div className="inputsLeft">
                         <div className="dataContainers">
-                            <label htmlFor="firstName" className="labels">First Name</label>
+                            <label htmlFor="firstName" className="labels">FIRST NAME</label>
                                 <input id="firstName" className="defaultInputStyle" type="text"/>   
                         </div>  
                         <div className="dataContainers">                 
-                            <label htmlFor="lastName" className="labels">Last Name</label>
+                            <label htmlFor="lastName" className="labels">LAST NAME</label>
                                 <input id="lastName" className="defaultInputStyle" type="text"/>
                         </div>  
                         <div className="genderContainer dataContainers">
                             <div>
-                                <label className="labels">Gender</label>
+                                <label className="labels">GENDER</label>
                             </div>
                             <div className="optionalRadioBoxes">
                                 <div className="maleFemaleContainer">
-                                    <label htmlFor="male" className="maleFemaleText">Male</label>
+                                    <label htmlFor="male" className="maleFemaleText">MALE</label>
                                     <input type="radio" 
                                     id="gender" 
                                     name="gender" 
@@ -31,7 +31,7 @@ const RegisterForm = () => {
                                     />
                                 </div>
                                 <div className="maleFemaleContainer">
-                                    <label htmlFor="female" className="maleFemaleText">Female</label>
+                                    <label htmlFor="female" className="maleFemaleText">FEMALE</label>
                                     <input type="radio" 
                                     id="fender" 
                                     name="gender" 
@@ -42,7 +42,7 @@ const RegisterForm = () => {
                         </div> 
                         <div className="dataContainers">                                   
                         <div>
-                            <label className="labels">Birthday</label>
+                            <label className="labels">BIRTHDAY</label>
                         </div>                           
                         <div className="birthdaySelects">
                                 <div className="dobDayBox">
@@ -51,7 +51,7 @@ const RegisterForm = () => {
                                         id="BirthDay" 
                                         name="BirthDay"
                                         >
-                                        <option value="None">Day</option>
+                                        <option value="None">DAY</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -90,7 +90,7 @@ const RegisterForm = () => {
                                     id="BirthMonth" 
                                     name="BirthMonth"
                                     >
-                                        <option value="None">Month</option>
+                                        <option value="None">MONTH</option>
                                         <option value="1">January</option>
                                         <option value="2">Febuary</option>
                                         <option value="3">March</option>
@@ -110,7 +110,7 @@ const RegisterForm = () => {
                                     id="BirthYear" 
                                     name="BirthYear"
                                     >
-                                        <option value="None">Year</option>
+                                        <option value="None">YEAR</option>
                                         <option value="2011">2011</option>
                                         <option value="2010">2010</option>
                                         <option value="2009">2009</option>
@@ -171,15 +171,15 @@ const RegisterForm = () => {
                     </div>
                     <div className="inputsRight">
                         <div className="dataContainers">
-                            <label htmlFor="phone" className="labels">Phone Number</label>
+                            <label htmlFor="phone" className="labels">PHONE NUMBER</label>
                                 <input id="phone" className="defaultInputStyle" type="text"/>   
                         </div>
                         <div className="dataContainers">
-                            <label htmlFor="phone" className="labels">Email Address</label>
+                            <label htmlFor="phone" className="labels">EMAIL ADDRESS</label>
                                 <input id="phone" className="defaultInputStyle" type="email"/>   
                         </div>
                         <div className="dataContainers">
-                            <label className="labels labelMargin">How many dogs do you have?</label>
+                            <label className="labels labelMargin">HOW MANY DOGS YOU HAVE?</label>
                                 <div className="labelSelectdistance">
                                     <select 
                                     className="numberOfDogAndPlaceSelect" 
@@ -195,7 +195,7 @@ const RegisterForm = () => {
                                 </div>                                    
                         </div>
                         <div className="dataContainers">
-                            <label className="labels labelMargin">Do you live in flat or house?</label>
+                            <label className="labels labelMargin">DO YOU LIVE IN FLAT OR HOUSE?</label>
                                 <div className="labelSelectdistance">
                                     <select 
                                     className="numberOfDogAndPlaceSelect" 
@@ -210,9 +210,16 @@ const RegisterForm = () => {
                         </div>
                     </div>
                 </div>       
-                <div className="checkboxAndSubmitButton">
-                    <h5 className="termsAndConditionsText">i've read and accept the <a href="https://termify.io/terms-and-conditions-generator?gclid=CjwKCAjwm8WZBhBUEiwA178UnCikvuNxl27UUgfH_HYhXYLxKiKzUP_xjgJydLkYVasB39JoTGtH7BoCnzcQAvD_BwE">terms & conditions</a></h5>
-                        <button className="registrationButton">Registration</button>
+                <div className="checkboxAndSubmitButtonContainer">
+                    <div className="checkboxAndTextContiner">
+                        <div className="checkboxContainer">
+                            <input type="checkbox"/>
+                        </div>              
+                        <div>
+                            <h5 className="termsAndConditionsText">i've read and accept the <a href="https://termify.io/terms-and-conditions-generator?gclid=CjwKCAjwm8WZBhBUEiwA178UnCikvuNxl27UUgfH_HYhXYLxKiKzUP_xjgJydLkYVasB39JoTGtH7BoCnzcQAvD_BwE">terms & conditions</a></h5>
+                        </div>
+                    </div>              
+                        <button className="registrationButton">REGISTRATION</button>
                 </div>
             </form>
         </div>
