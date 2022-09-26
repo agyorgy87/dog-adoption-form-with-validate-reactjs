@@ -10,11 +10,11 @@ const RegisterForm = () => {
                     <div className="inputsLeft">
                         <div className="dataContainers">
                             <label htmlFor="firstName" className="labels">First Name</label>
-                                <input id="firstName" className="firsLastNameInput" type="text"/>   
+                                <input id="firstName" className="defaultInputStyle" type="text"/>   
                         </div>  
                         <div className="dataContainers">                 
                             <label htmlFor="lastName" className="labels">Last Name</label>
-                                <input id="lastName" className="firsLastNameInput" type="text"/>
+                                <input id="lastName" className="defaultInputStyle" type="text"/>
                         </div>  
                         <div className="genderContainer dataContainers">
                             <div>
@@ -46,7 +46,8 @@ const RegisterForm = () => {
                         </div>                           
                         <div className="birthdaySelects">
                                 <div className="dobDayBox">
-                                    <select className="dobSelects" 
+                                    <select 
+                                        className="dobSelects" 
                                         id="BirthDay" 
                                         name="BirthDay"
                                         >
@@ -104,7 +105,7 @@ const RegisterForm = () => {
                                         <option value="12">December</option>
                                     </select>
                                 </div>
-                                <div>
+                                <div className="dobDayYear">
                                     <select className="dobSelects" 
                                     id="BirthYear" 
                                     name="BirthYear"
@@ -169,17 +170,46 @@ const RegisterForm = () => {
                         </div> 
                     </div>
                     <div className="inputsRight">
-                        inputs:
-                        -phone
-                        -email
-                        -how many dogs you have?
-                        -dou you live in apartman or house?
+                        <div className="dataContainers">
+                            <label htmlFor="phone" className="labels">Phone Number</label>
+                                <input id="phone" className="defaultInputStyle" type="number"/>   
+                        </div>
+                        <div className="dataContainers">
+                            <label htmlFor="phone" className="labels">Email Address</label>
+                                <input id="phone" className="defaultInputStyle" type="email"/>   
+                        </div>
+                        <div className="dataContainers">
+                            <label className="labels">How many dogs do you have?</label>
+                                    <select 
+                                    className="numberOfDogAndPlaceSelect" 
+                                    id="dogNumberQuestion" 
+                                    name="dogNumberQuestion"
+                                    >
+                                        <option value="none">---</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3 or more</option>  
+                                    </select>                          
+                        </div>
+                        <div className="dataContainers">
+                            <label className="labels">Do you live in flat or house?</label>
+                                    <select 
+                                    className="numberOfDogAndPlaceSelect" 
+                                    id="dogNumberQuestion" 
+                                    name="dogNumberQuestion"
+                                    >
+                                        <option value="none">---</option>
+                                        <option value="flat">Flat</option>
+                                        <option value="house">House</option>                                    
+                                    </select>                          
+                        </div>
                     </div>
-                    </div>       
-                    <div className="checkboxAndSubmitButton">
-                            i've read and accept the terms & conditions
+                </div>       
+                <div className="checkboxAndSubmitButton">
+                            <h5 className="termsAndConditionsText">i've read and accept the <a href="https://termify.io/terms-and-conditions-generator?gclid=CjwKCAjwm8WZBhBUEiwA178UnCikvuNxl27UUgfH_HYhXYLxKiKzUP_xjgJydLkYVasB39JoTGtH7BoCnzcQAvD_BwE">terms & conditions</a></h5>
                             register button + tap icon
-                    </div>
+                </div>
             </form>
         </div>
     )

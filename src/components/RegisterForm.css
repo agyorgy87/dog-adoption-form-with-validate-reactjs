@@ -6,12 +6,20 @@
 }
 
 .registerFormInputs {
-    border: 2px solid black;
+    
     display: flex;
     justify-content: space-between;
 }
 
 .inputsLeft {
+    width: 50%;
+    height: 350px;
+    display: flex;
+    flex-direction: column; 
+    padding-left: 30px;
+}
+
+.inputsRight {
     width: 50%;
     height: 350px;
     display: flex;
@@ -28,15 +36,15 @@
 }
 
 .labels {
-    display: block;
     font-size: 30px;
     color: #393E46;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.firsLastNameInput {
-    height: 1.5rem;
+.defaultInputStyle {
+    height: 2rem;
     width: 20rem;
+    outline: none;
 }
 
 .optionalRadioBoxes {
@@ -45,7 +53,7 @@
 }
 
 .maleRadioButton{
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 .maleFemaleText {
@@ -60,7 +68,7 @@
 }
 
 .dobSelects {
-    height: 30px;
+    height: 2rem;
     width: 150%;
     border: 1px solid #9b9b9b;
     border-radius: 3px;
@@ -69,13 +77,35 @@
 }
 
 .dobDayBox {
-    margin-right: 30px;
+    margin-right: 2.5rem;
+    width: 3rem;
 }
 
 .dobDayMonth {
-    margin-right: 50px;
+    margin-right: 4rem;
+    width: 6rem;
 }
 
+
+.dobDayYear {
+    width: 3.5rem;
+}
+
+.numberOfDogAndPlaceSelect {
+    outline: none;
+    height: 1.8rem;
+    width: 21rem;
+}
+
+.checkboxAndSubmitButton {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.termsAndConditionsText {
+
+}
 
 
 
