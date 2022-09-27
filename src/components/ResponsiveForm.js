@@ -1,11 +1,12 @@
 import React from 'react'
+import './ResponsiveForm.css';
 
-const responsiveForm = () => {
+const ResponsiveForm = () => {
   return (
     <div className="container">
-
+        <h1>REGISTRATION FOR ADOPTION</h1>
     </div>
   )
 }
 
-export default responsiveForm
+export default ResponsiveForm;

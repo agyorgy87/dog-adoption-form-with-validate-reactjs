@@ -6,3 +6,15 @@
     box-sizing: border-box;
 }
 
+.container {
+    background-color: #ffffff;
+    width: 95%;
+    min-width: 26rem;
+    padding: 2rem 3rem;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    border-radius: 0.7rem;
+}
+
