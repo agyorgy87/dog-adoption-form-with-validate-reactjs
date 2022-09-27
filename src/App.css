@@ -1,5 +1,8 @@
 .App {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
+    height: 100vh;
+    bavkground: linear-gradient (
+        135deg,
+        #6F38C5,
+        #6F38C5
+    )
 }

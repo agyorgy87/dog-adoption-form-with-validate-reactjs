@@ -15,7 +15,7 @@ const RegisterForm = () => {
 
     return (
         <div>
-            <form className="formContainers" onSubmit={handleSubmit}>
+            <form className="formContainers row g-3" onSubmit={handleSubmit}>
                 <div className="registerFormInputs">
                     <div className="inputsLeft">
                         <div className="dataContainers">
