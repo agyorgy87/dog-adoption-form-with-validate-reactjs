@@ -7,11 +7,24 @@
 }
 
 
+.App::-webkit-scrollbar {
+    display: none;
+}
+
+
 .App {
-    min-height: 100vh;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    background-size:cover;
+    background-position: center;
+    overflow: scroll;
+    
+    /*
+    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size:cover; 
-    
+    */
 }
 
