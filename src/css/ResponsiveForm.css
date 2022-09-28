@@ -47,8 +47,8 @@ form {
     margin-bottom: 20px;
 }
 
-label {  
-    font-size: 1.3rem;
+.labels {  
+    font-size: 1rem;
 }
 
 span {
@@ -116,6 +116,15 @@ textarea {
     border: none;
     padding: 10px 20px; 
     border-radius: 3px;
+}
+
+.invalid {
+    border-color: red;
+}
+
+.errorText {
+    margin-top: 0px;
+    color: red;
 }
 
 

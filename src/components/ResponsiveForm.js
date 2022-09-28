@@ -1,34 +1,48 @@
-import React from 'react'
 import '../css/ResponsiveForm.css';
+import React from 'react';
 import {BsFillSuitHeartFill} from 'react-icons/bs';
+import useForm from '../Hooks/useForm';
+import validate from '../Hooks/validate';
 
 
 
 const ResponsiveForm = () => {
+
+    const {handleChange, values, handleSubmit, errors} = useForm(validate);
+
     return (
         <div className="container">
             <h1>REGISTRATION FOR ADOPTION</h1>
                 <p>A dog is a big responsibility! If you are aware of this, we will gladly accept your registration for adoption.</p>
                 <p>After submitting the form, we will contact you as soon as possible. <BsFillSuitHeartFill/></p>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <div className="row">
                             <div className="column">
                                 <label htmlFor="firstName">First Name</label>
-                                <input type="text" id="firstName"/>
+                                    <input 
+                                    className={`labels ${errors ? 'invalid' : ''}`}
+                                    type="text" 
+                                    id="firstName" 
+                                    name="firstName" 
+                                    value={values.firstName}
+                                    onChange={handleChange}
+                                    />
+                            {errors.firstName && <p className="errorText">{errors.firstName}</p> }
                             </div>
+                            
                             <div className="column">
                                 <label htmlFor="lastName">Last Name</label>
-                                <input type="text" id="lastName"/>
+                                <input type="text" id="lastName" name="lastName"/>
                             </div>
                         </div>
                         <div className="row">
                             <div className="column">
                                 <label htmlFor="phone">Contact Number</label>
-                                    <input type="text" id="phone"/>   
+                                    <input type="text" id="phone" name="phoneNumber"/>   
                             </div>
                             <div className="column">
                                 <label htmlFor="phone">Email Address</label>
-                                    <input id="phone"  type="email"/>   
+                                    <input id="phone"  type="email" name="emailAddress"/>   
                             </div>         
                         </div>
                         <div className="row">
@@ -64,7 +78,7 @@ const ResponsiveForm = () => {
                             <div className="column">
                                 <div>
                                     <div>
-                                        <label>Birthday</label>
+                                        <label>Birthday - People aged between 20 and 60 can adopt a dog!</label>
                                     </div>                           
                                     <div className="all-birthday-container">
                                         <div className="day-of-birth-container">
@@ -132,15 +146,6 @@ const ResponsiveForm = () => {
                                             name="yearOfBirth"
                                             >
                                                 <option value="none">Year</option>
-                                                <option value="2011">2011</option>
-                                                <option value="2010">2010</option>
-                                                <option value="2009">2009</option>
-                                                <option value="2008">2008</option>
-                                                <option value="2007">2007</option>
-                                                <option value="2006">2006</option>
-                                                <option value="2005">2005</option>
-                                                <option value="2004">2004</option>
-                                                <option value="2003">2003</option>
                                                 <option value="2002">2002</option>
                                                 <option value="2001">2001</option>
                                                 <option value="2000">2000</option>
@@ -196,8 +201,8 @@ const ResponsiveForm = () => {
                                 <label>How many dogs you have?</label>
                                         <div>
                                             <select                                              
-                                            id="dogNumberQuestion" 
-                                            name="dogNumberQuestion"
+                                            id="dogNumberOfQuestion" 
+                                            name="dogNumberOfQuestion"
                                             >
                                                 <option value="none">-</option>
                                                 <option value="0">0</option>
@@ -211,8 +216,8 @@ const ResponsiveForm = () => {
                                 <label>Do you live flat or house?</label>
                                     <div>
                                         <select                                         
-                                        id="dogNumberQuestion" 
-                                        name="dogNumberQuestion"
+                                        id="flatOrHouseQuestion" 
+                                        name="flatOrHouseQuestion"
                                         >
                                             <option value="none">-</option>
                                             <option value="flat">Flat</option>
