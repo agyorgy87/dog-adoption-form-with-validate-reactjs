@@ -47,10 +47,10 @@ form {
     margin-bottom: 20px;
 }
 
-label {
-    float: left;
-    padding-right: 4rem;
+label {  
+    font-size: 1.0rem;
 }
+
 
 span {
     display: block;
@@ -61,26 +61,40 @@ span {
 input {
     width: 100%;
     padding: 8px 10px;
-    margin-top: 5px;
     outline: none;
 }
 
-.gender-container, 
-.birthday-container {
+select {
+    margin-right: 2.5rem;
+    height: 2rem;
+    outline: none;
+    width: 100%;
+}
+
+.gender-label-container {
+    margin-bottom: 0.5rem;
+}
+
+.radio-buttons {
     display: flex;
     justify-content: flex-start;
-    flex-direction: row;
 }
 
-.gender-label {
-    padding-right: 4rem;
+.male-female-label {
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
 }
 
-.male-female-text {
-    padding-right: 0.5rem;
+.all-birthday-container {
+    display: flex;
+    justify-content: flex-start;
 }
 
-.birthday-option-container {
-
+.day-of-birth-container,
+.month-of-birth-container {
+    margin-right: 1rem;
 }
+
 
