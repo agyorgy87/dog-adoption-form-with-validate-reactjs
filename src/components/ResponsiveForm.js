@@ -227,6 +227,9 @@ const ResponsiveForm = () => {
                                 <textarea id="textareaForQuestin" rows="3"></textarea>
                             </div>   
                         </div>
+                        <div className="button-container">
+                        <button className="button">submit</button>
+                        </div>
                     </form>
         </div>
   )
