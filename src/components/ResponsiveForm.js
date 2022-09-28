@@ -60,8 +60,7 @@ const ResponsiveForm = () => {
                                             </span>
                                     </div>                                                                              
                                 </div>
-                            </div>
-                            
+                            </div>                            
                             <div className="column">
                                 <div>
                                     <div>
@@ -191,6 +190,36 @@ const ResponsiveForm = () => {
                                     </div>
                                 </div>
                             </div>       
+                        </div>
+                        <div className="row">
+                            <div className="columns">
+                                <label>How many dogs you have?</label>
+                                        <div>
+                                            <select                                              
+                                            id="dogNumberQuestion" 
+                                            name="dogNumberQuestion"
+                                            >
+                                                <option value="none">-</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3 or more</option>  
+                                            </select>   
+                                </div>
+                            </div>
+                            <div className="column">
+                                <label>Do you live flat or house?</label>
+                                    <div>
+                                        <select                                         
+                                        id="dogNumberQuestion" 
+                                        name="dogNumberQuestion"
+                                        >
+                                            <option value="none">-</option>
+                                            <option value="flat">Flat</option>
+                                            <option value="house">House</option>                                    
+                                        </select>   
+                                    </div>
+                            </div>
                         </div>
                     </form>
         </div>
