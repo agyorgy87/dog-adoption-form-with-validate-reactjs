@@ -13,11 +13,11 @@ const ResponsiveForm = () => {
                     <form>
                         <div className="row">
                             <div className="column">
-                                <label htmlFor="firstname">First Name</label>
+                                <label htmlFor="firstName">First Name</label>
                                 <input type="text" id="firstName"/>
                             </div>
                             <div className="column">
-                                <label htmlFor="lastname">Last Name</label>
+                                <label htmlFor="lastName">Last Name</label>
                                 <input type="text" id="lastName"/>
                             </div>
                         </div>
@@ -220,6 +220,12 @@ const ResponsiveForm = () => {
                                         </select>   
                                     </div>
                             </div>
+                        </div>
+                        <div className="row">
+                            <div className="column">
+                                <label htmlFor="textareaForQuestion">Why do you want to adopt a dog?</label>
+                                <textarea id="textareaForQuestin" rows="3"></textarea>
+                            </div>   
                         </div>
                     </form>
         </div>

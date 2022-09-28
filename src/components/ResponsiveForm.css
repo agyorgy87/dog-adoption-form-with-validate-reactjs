@@ -11,7 +11,7 @@
     width: 60%;
     min-width: 26rem;
     padding: 1rem 2rem;
-    transform: translate(-50%, -65%);
+    transform: translate(-50%, -50%);
     position: absolute;
     left: 50%; 
     top: 50%;
@@ -47,10 +47,10 @@ form {
     margin-bottom: 20px;
 }
 
-label {  
+label,
+textarea {  
     font-size: 1.0rem;
 }
-
 
 span {
     display: block;
@@ -58,13 +58,17 @@ span {
     padding: 0rem 2rem 0rem 0rem;
 }
 
-input {
+input,
+textarea,
+select
+{
     width: 100%;
     padding: 8px 10px;
     outline: none;
 }
 
-select {
+select,
+textarea {
     margin-right: 2.5rem;
     height: 2rem;
     outline: none;
