@@ -1,5 +1,5 @@
 import React from 'react'
-import './ResponsiveForm.css';
+import '../css/ResponsiveForm.css';
 import {BsFillSuitHeartFill} from 'react-icons/bs';
 
 
