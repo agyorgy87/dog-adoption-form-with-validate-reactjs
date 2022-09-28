@@ -8,10 +8,10 @@
 
 .container {
     background-color: #ffffff;
-    width: 70%;
+    width: 60%;
     min-width: 26rem;
     padding: 1rem 2rem;
-    transform: translate(-50%, -90%);
+    transform: translate(-50%, -65%);
     position: absolute;
     left: 50%; 
     top: 50%;
@@ -49,6 +49,7 @@ form {
 
 label {
     float: left;
+    padding-right: 4rem;
 }
 
 span {
@@ -64,7 +65,8 @@ input {
     outline: none;
 }
 
-.gender-container {
+.gender-container, 
+.birthday-container {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -77,3 +79,8 @@ input {
 .male-female-text {
     padding-right: 0.5rem;
 }
+
+.birthday-option-container {
+
+}
+
