@@ -47,10 +47,6 @@ form {
     margin-bottom: 20px;
 }
 
-.labels {  
-    font-size: 1rem;
-}
-
 span {
     display: block;
     overflow: hidden;
@@ -62,12 +58,16 @@ textarea,
 select
 {
     border: none;
-    border-width: 0 0 2px;
+    border-width: 0 0 0 0;
     width: 100%;
     padding: 8px 10px;
     border-radius: 5px;
     margin-top: 5px;
     outline: none;
+}
+
+.inputField {
+    border-color: purple;
 }
 
 select {

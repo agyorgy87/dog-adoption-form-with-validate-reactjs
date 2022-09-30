@@ -20,29 +20,49 @@ const ResponsiveForm = () => {
                             <div className="column">
                                 <label htmlFor="firstName">First Name</label>
                                     <input 
-                                    className={`labels ${errors ? 'invalid' : ''}`}
                                     type="text" 
                                     id="firstName" 
                                     name="firstName" 
                                     value={values.firstName}
                                     onChange={handleChange}
                                     />
-                            {errors.firstName && <p className="errorText">{errors.firstName}</p> }
-                            </div>
-                            
+                            {errors.firstName && <p className="errorText">{errors.firstName}</p>}
+                            </div>                           
                             <div className="column">
                                 <label htmlFor="lastName">Last Name</label>
-                                <input type="text" id="lastName" name="lastName"/>
+                                <input 
+                                className=""
+                                type="text" 
+                                id="lastName" 
+                                name="lastName"
+                                value={values.lastName}
+                                onChange={handleChange}
+                                />
+                            {errors.lastName && <p className="errorText">{errors.lastName}</p>}
                             </div>
                         </div>
                         <div className="row">
                             <div className="column">
                                 <label htmlFor="phone">Contact Number</label>
-                                    <input type="text" id="phone" name="phoneNumber"/>   
+                                    <input 
+                                    type="text" 
+                                    id="phone" 
+                                    name="phoneNumber"
+                                    value={values.phoneNumber}
+                                    onChange={handleChange}
+                                    /> 
+                                    {errors.phoneNumber && <p className="errorText">{errors.phoneNumber}</p>}  
                             </div>
                             <div className="column">
                                 <label htmlFor="phone">Email Address</label>
-                                    <input id="phone"  type="email" name="emailAddress"/>   
+                                    <input 
+                                    id="phone"  
+                                    type="email" 
+                                    name="emailAddress"
+                                    value={values.emailAddress}
+                                    onChange={handleChange}
+                                    /> 
+                                    {errors.emailAddress && <p className="errorText">{errors.emailAddress}</p>}  
                             </div>         
                         </div>
                         <div className="row">
