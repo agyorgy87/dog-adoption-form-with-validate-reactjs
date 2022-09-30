@@ -25,21 +25,23 @@ export default function validateInfo(values) {
         errors.gender = "Please enter your Gender"
     }
 
-    if(values.dayOfBirth === "None" && values.monthOfBirth === "None" && values.yearOfBirth === "None"){
+    if(values.dayOfBirth === "none" && values.monthOfBirth === "none" && values.yearOfBirth === "none"){
         errors.birth = "Please enter your Birthday"
-    }else if(values.dayOfBirth === "None" && values.monthOfBirth !== "None" && values.yearOfBirth !== "None"){
+    }else if(values.dayOfBirth === "none" && values.monthOfBirth !== "none" && values.yearOfBirth !== "none"){
         errors.birth = "You missed the day, please select it"
-    }else if(values.dayOfBirth !== "None" && values.monthOfBirth === "None" && values.yearOfBirth !== "None"){
+    }else if(values.dayOfBirth !== "none" && values.monthOfBirth === "none" && values.yearOfBirth !== "none"){
         errors.birth = "You missed the month, please select it"
-    }else if(values.dayOfBirth !== "None" && values.monthOfBirth !== "None" && values.yearOfBirth === "None"){
+    }else if(values.dayOfBirth !== "none" && values.monthOfBirth !== "none" && values.yearOfBirth === "none"){
         errors.birth = "You missed the year, please select it"
-    }else if(values.dayOfBirth === "None" && values.monthOfBirth === "None" && values.yearOfBirth !== "None"){
+    }else if(values.dayOfBirth === "none" && values.monthOfBirth === "none" && values.yearOfBirth !== "none"){
         errors.birth = "You missed the day and the month, please select them"
-    }else if(values.dayOfBirth === "None" && values.monthOfBirth !== "None" && values.yearOfBirth === "None"){
+    }else if(values.dayOfBirth === "none" && values.monthOfBirth !== "none" && values.yearOfBirth === "none"){
         errors.birth = "You missed the day and the year, please select them"
-    }else if(values.dayOfBirth !== "None" && values.monthOfBirth === "None" && values.yearOfBirth === "None"){
+    }else if(values.dayOfBirth !== "none" && values.monthOfBirth === "none" && values.yearOfBirth === "none"){
         errors.birth = "You missed the month and the year, please select them"
     }
+
+    
     
     return errors;
 }

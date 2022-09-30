@@ -108,6 +108,8 @@ const ResponsiveForm = () => {
                                             <select
                                             id="dayOfBirth" 
                                             name="dayOfBirth"
+                                            value={values.dayOfBirth}
+                                            onChange={handleChange}
                                             >
                                                 <option value="none">Day</option>
                                                 <option value="1">1</option>
@@ -147,6 +149,8 @@ const ResponsiveForm = () => {
                                             <select
                                             id="monthOfBirth" 
                                             name="monthOfBirth"
+                                            value={values.monthOfBirth}
+                                            onChange={handleChange}
                                             >
                                                 <option value="none">Mont</option>
                                                 <option value="january">January</option>
@@ -167,6 +171,8 @@ const ResponsiveForm = () => {
                                             <select
                                             id="yearOfBirth" 
                                             name="yearOfBirth"
+                                            value={values.yearOfBirth}
+                                            onChange={handleChange}
                                             >
                                                 <option value="none">Year</option>
                                                 <option value="2002">2002</option>
@@ -217,6 +223,7 @@ const ResponsiveForm = () => {
                                         </div>
                                     </div>
                                 </div>
+                                {errors.birth && <p className="errorText">{errors.birth}</p>}
                             </div>       
                         </div>
                         <div className="row">
