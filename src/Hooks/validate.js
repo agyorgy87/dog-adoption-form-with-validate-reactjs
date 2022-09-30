@@ -48,6 +48,12 @@ export default function validateInfo(values) {
     if(values.flatOrHouseQuestion === "none") {
         errors.flatOrHouseQuestion = "Please answer the question"
     }
+
+    if(values.textareaQuestion === "") {
+        errors.textareaQuestion = "Please write something"
+    } else if(values.textareaQuestion.length < 10) {
+        errors.textareaQuestion = "Please write more"
+    }
     
     return errors;
 }

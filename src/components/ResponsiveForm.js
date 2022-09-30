@@ -265,7 +265,15 @@ const ResponsiveForm = () => {
                         <div className="row">
                             <div className="column">
                                 <label htmlFor="textareaForQuestion">Why do you want to adopt a dog?</label>
-                                <textarea id="textareaForQuestin" rows="3"></textarea>
+                                    <textarea 
+                                    id="textareaForQuestin" 
+                                    name="textareaQuestion"  
+                                    value={values.textareaQuestion}
+                                    onChange={handleChange}
+                                    valuerows="3"
+                                    >
+                                    </textarea>
+                                {errors.textareaQuestion && <p className="errorText">{errors.textareaQuestion}</p>}
                             </div>   
                         </div>
                         <div className="button-container">
