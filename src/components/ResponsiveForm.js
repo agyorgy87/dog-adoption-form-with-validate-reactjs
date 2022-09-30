@@ -78,7 +78,8 @@ const ResponsiveForm = () => {
                                                 type="radio" 
                                                 id="gender" 
                                                 name="gender" 
-                                                value="male"
+                                                value={values.gender === "male" ? true : false}
+                                                onChange={handleChange}
                                                 />  
                                             </span>
                                     </div>
@@ -89,11 +90,13 @@ const ResponsiveForm = () => {
                                                 type="radio" 
                                                 id="female" 
                                                 name="gender" 
-                                                value="female"                                   
+                                                value={values.gender === "female" ? true : false}      
+                                                onChange={handleChange}                             
                                                 />  
                                             </span>
                                     </div>                                                                              
                                 </div>
+                                {errors.gender && <p className="errorText">{errors.gender}</p>}
                             </div>                            
                             <div className="column">
                                 <div>
