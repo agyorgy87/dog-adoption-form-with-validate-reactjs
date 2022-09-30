@@ -41,7 +41,13 @@ export default function validateInfo(values) {
         errors.birth = "You missed the month and the year, please select them"
     }
 
-    
+    if(values.dogNumberOfQuestion === "none") {
+        errors.dogNumberOfQuestion = "Please answer the question"
+    }
+
+    if(values.flatOrHouseQuestion === "none") {
+        errors.flatOrHouseQuestion = "Please answer the question"
+    }
     
     return errors;
 }

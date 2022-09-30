@@ -229,18 +229,21 @@ const ResponsiveForm = () => {
                         <div className="row">
                             <div className="columns">
                                 <label>How many dogs you have?</label>
-                                        <div>
-                                            <select                                              
-                                            id="dogNumberOfQuestion" 
-                                            name="dogNumberOfQuestion"
-                                            >
-                                                <option value="none">-</option>
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3 or more</option>  
-                                            </select>   
-                                </div>
+                                    <div>
+                                        <select                                              
+                                        id="dogNumberOfQuestion" 
+                                        name="dogNumberOfQuestion"
+                                        value={values.dogNumberOfQuestion}
+                                        onChange={handleChange}
+                                        >
+                                            <option value="none">-</option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3 or more</option>  
+                                        </select>   
+                                    </div>
+                                {errors.dogNumberOfQuestion && <p className="errorText">{errors.dogNumberOfQuestion}</p>}
                             </div>
                             <div className="column">
                                 <label>Do you live flat or house?</label>
@@ -248,12 +251,15 @@ const ResponsiveForm = () => {
                                         <select                                         
                                         id="flatOrHouseQuestion" 
                                         name="flatOrHouseQuestion"
+                                        value={values.flatOrHouseQuestion}
+                                        onChange={handleChange}
                                         >
                                             <option value="none">-</option>
                                             <option value="flat">Flat</option>
                                             <option value="house">House</option>                                    
                                         </select>   
                                     </div>
+                                {errors.flatOrHouseQuestion && <p className="errorText">{errors.flatOrHouseQuestion}</p>}
                             </div>
                         </div>
                         <div className="row">
