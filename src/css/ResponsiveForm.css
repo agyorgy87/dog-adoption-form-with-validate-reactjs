@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
 *,
 *:before,
 *:after {
@@ -10,19 +12,22 @@
     background-color: #ffffff;
     width: 70%;
     min-width: 26rem;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     transform: translate(-50%, -40%);
     position: absolute;
     left: 50%; 
     top: 50%;
     border-radius: 0.7rem;
-    opacity: 0.8;
+    opacity: 0.9;
     background-color: #D8D8D8;
 }
 
 h1 {
     font-size: 30px;
     text-align:center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #383838;
 }
 
 p {
@@ -30,6 +35,9 @@ p {
     margin: auto;
     width: 100%;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #383838;
 }
 
 
@@ -53,6 +61,12 @@ span {
     padding: 0rem 2rem 0rem 0rem;
 }
 
+.labels {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #383838;
+}
+
 input,
 textarea,
 select
@@ -64,6 +78,7 @@ select
     border-radius: 5px;
     margin-top: 5px;
     outline: none;
+    font-size: 15px;
 }
 
 .inputField {
@@ -95,6 +110,8 @@ textarea {
     clear: both;
     float:left;
     margin-right:15px;
+    color: #383838;
+    font-weight: 600;
 }
 
 .all-birthday-container {
@@ -125,6 +142,7 @@ textarea {
 .errorText {
     margin-top: 0px;
     color: red;
+    text-align: left;
 }
 
 

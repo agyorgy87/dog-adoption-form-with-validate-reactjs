@@ -18,7 +18,7 @@ const ResponsiveForm = () => {
                     <form onSubmit={handleSubmit}>
                         <div className="row">
                             <div className="column">
-                                <label htmlFor="firstName">First Name</label>
+                                <label htmlFor="firstName" className="labels">First Name</label>
                                     <input 
                                     type="text" 
                                     id="firstName" 
@@ -29,7 +29,7 @@ const ResponsiveForm = () => {
                             {errors.firstName && <p className="errorText">{errors.firstName}</p>}
                             </div>                           
                             <div className="column">
-                                <label htmlFor="lastName">Last Name</label>
+                                <label htmlFor="lastName" className="labels">Last Name</label>
                                 <input 
                                 className=""
                                 type="text" 
@@ -43,7 +43,7 @@ const ResponsiveForm = () => {
                         </div>
                         <div className="row">
                             <div className="column">
-                                <label htmlFor="phone">Contact Number</label>
+                                <label htmlFor="phone" className="labels">Contact Number</label>
                                     <input 
                                     type="text" 
                                     id="phone" 
@@ -54,7 +54,7 @@ const ResponsiveForm = () => {
                                     {errors.phoneNumber && <p className="errorText">{errors.phoneNumber}</p>}  
                             </div>
                             <div className="column">
-                                <label htmlFor="phone">Email Address</label>
+                                <label htmlFor="phone" className="labels">Email Address</label>
                                     <input 
                                     id="phone"  
                                     type="email" 
@@ -68,7 +68,7 @@ const ResponsiveForm = () => {
                         <div className="row">
                             <div className="column gender-container">
                                 <div className="gender-label-container">
-                                    <label>Gender</label>
+                                    <label className="labels">Gender</label>
                                 </div>
                                 <div className="radio-buttons">
                                     <div>
@@ -101,7 +101,7 @@ const ResponsiveForm = () => {
                             <div className="column">
                                 <div>
                                     <div>
-                                        <label>Birthday - People aged between 20 and 60 can adopt a dog!</label>
+                                        <label className="labels">Birthday - People aged between 20 and 60 can adopt a dog!</label>
                                     </div>                           
                                     <div className="all-birthday-container">
                                         <div className="day-of-birth-container">
@@ -228,7 +228,7 @@ const ResponsiveForm = () => {
                         </div>
                         <div className="row">
                             <div className="columns">
-                                <label>How many dogs you have?</label>
+                                <label className="labels">How many dogs you have?</label>
                                     <div>
                                         <select                                              
                                         id="dogNumberOfQuestion" 
@@ -246,7 +246,7 @@ const ResponsiveForm = () => {
                                 {errors.dogNumberOfQuestion && <p className="errorText">{errors.dogNumberOfQuestion}</p>}
                             </div>
                             <div className="column">
-                                <label>Do you live flat or house?</label>
+                                <label className="labels">Do you live flat or house?</label>
                                     <div>
                                         <select                                         
                                         id="flatOrHouseQuestion" 
@@ -264,7 +264,7 @@ const ResponsiveForm = () => {
                         </div>
                         <div className="row">
                             <div className="column">
-                                <label htmlFor="textareaForQuestion">Why do you want to adopt a dog?</label>
+                                <label htmlFor="textareaForQuestion" className="labels">Why do you want to adopt a dog?</label>
                                     <textarea 
                                     id="textareaForQuestin" 
                                     name="textareaQuestion"  
