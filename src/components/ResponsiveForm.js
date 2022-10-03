@@ -101,7 +101,7 @@ const ResponsiveForm = () => {
                             <div className="column">
                                 <div>
                                     <div>
-                                        <label className="labels">Birthday - People aged between 20 and 60 can adopt a dog!</label>
+                                        <label className="labels">Birthday - Adopt a dog between 20 and 60 years old!</label>
                                     </div>                           
                                     <div className="all-birthday-container">
                                         <div className="day-of-birth-container">
@@ -152,7 +152,7 @@ const ResponsiveForm = () => {
                                             value={values.monthOfBirth}
                                             onChange={handleChange}
                                             >
-                                                <option value="none">Mont</option>
+                                                <option value="none">Month</option>
                                                 <option value="january">January</option>
                                                 <option value="february">Febuary</option>
                                                 <option value="march">March</option>
@@ -277,7 +277,7 @@ const ResponsiveForm = () => {
                             </div>   
                         </div>
                         <div className="button-container">
-                        <button className="button">submit</button>
+                            <button className="button">REGISTRATION</button>
                         </div>
                     </form>
         </div>

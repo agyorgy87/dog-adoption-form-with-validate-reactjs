@@ -9,7 +9,6 @@
 }
 
 .container {
-    background-color: #ffffff;
     width: 70%;
     min-width: 26rem;
     padding: 2rem 2rem;
@@ -19,7 +18,7 @@
     top: 50%;
     border-radius: 0.7rem;
     opacity: 0.9;
-    background-color: #D8D8D8;
+    background-color: #CFD2CF;
 }
 
 h1 {
@@ -87,7 +86,7 @@ select
 
 select {
     margin-right: 2.5rem;
-    height: 2rem;
+    height: 2.2rem;
     outline: none;
     width: 100%;
 }
@@ -124,6 +123,7 @@ textarea {
     margin-right: 1rem;
 }
 
+
 .button-container {
     display: flex;
     justify-content: center;
@@ -133,6 +133,12 @@ textarea {
     border: none;
     padding: 10px 20px; 
     border-radius: 3px;
+    height: 3rem;
+    width: 20%;
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #383838;
 }
 
 .invalid {
@@ -140,9 +146,10 @@ textarea {
 }
 
 .errorText {
-    margin-top: 0px;
-    color: red;
+    margin-top: 0.3rem;
+    color: #EB1D36;
     text-align: left;
+    font-family: 'Raleway', sans-serif;
 }
 
 
