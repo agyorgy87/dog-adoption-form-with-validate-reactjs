@@ -11,32 +11,32 @@
 .container {
     width: 70%;
     min-width: 26rem;
+    border-radius: 0.7rem;
     padding: 2rem 2rem;
-    transform: translate(-50%, -40%);
     position: absolute;
+    transform: translate(-50%, -40%);
     left: 50%; 
     top: 50%;
-    border-radius: 0.7rem;
     opacity: 0.9;
     background-color: #CFD2CF;
 }
 
 h1 {
-    font-size: 30px;
     text-align:center;
-    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
     font-weight: 700;
     color: #383838;
+    font-family: 'Raleway', sans-serif;
 }
 
 p {
-    position: relative;
-    margin: auto;
     width: 100%;
+    margin: auto;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    position: relative;
     font-weight: 700;
     color: #383838;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -48,10 +48,10 @@ form {
 
 .row {
     width: 100%;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     grid-gap: 20px 30px;
-    margin-bottom: 20px;
 }
 
 span {
@@ -61,23 +61,23 @@ span {
 }
 
 .labels {
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #383838;
+    font-family: 'Raleway', sans-serif;
 }
 
 input,
 textarea,
 select
 {
-    border: none;
-    border-width: 0 0 0 0;
     width: 100%;
-    padding: 8px 10px;
-    border-radius: 5px;
-    margin-top: 5px;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    border-width: 0 0 0 0;
+    padding: 0.5rem 0.7rem;
     outline: none;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .inputField {
@@ -85,10 +85,10 @@ select
 }
 
 select {
-    margin-right: 2.5rem;
     height: 2.2rem;
-    outline: none;
     width: 100%;
+    margin-right: 2.5rem;
+    outline: none;
 }
 
 textarea {
@@ -105,12 +105,12 @@ textarea {
 }
 
 .male-female-label {
+    margin-right:15px;
     text-align: right;
     clear: both;
     float:left;
-    margin-right:15px;
-    color: #383838;
     font-weight: 600;
+    color: #383838;
 }
 
 .all-birthday-container {
@@ -130,25 +130,27 @@ textarea {
 }
 
 .button {
-    border: none;
-    padding: 10px 20px; 
-    border-radius: 3px;
     height: 3rem;
-    width: 20%;
+    min-width: 20%;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem; 
     font-size: 1.5rem;
-    font-family: 'Raleway', sans-serif;
     font-weight: 600;
     color: #383838;
+    font-family: 'Raleway', sans-serif;
 }
 
+/*
 .invalid {
     border-color: red;
 }
+*/
 
 .errorText {
     margin-top: 0.3rem;
-    color: #EB1D36;
     text-align: left;
+    color: #EB1D36;
     font-family: 'Raleway', sans-serif;
 }
 

@@ -281,7 +281,7 @@ const ResponsiveForm = () => {
                         </div>
                     </form>
         </div>
-  )
+    )
 }
 
 export default ResponsiveForm;
