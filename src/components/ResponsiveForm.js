@@ -1,12 +1,12 @@
 import '../css/ResponsiveForm.css';
 import React from 'react';
 import {BsFillSuitHeartFill} from 'react-icons/bs';
-import useForm from '../Hooks/useForm';
-import validate from '../Hooks/validate';
+import useForm from '../hooks/useForm';
+import validate from '../hooks/validate';
 
 
 
-const ResponsiveForm = () => {
+const ResponsiveForm = () => { 
 
     const {handleChange, values, handleSubmit, errors} = useForm(validate);
 
