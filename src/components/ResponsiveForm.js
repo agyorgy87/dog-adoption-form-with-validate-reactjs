@@ -26,7 +26,7 @@ const ResponsiveForm = () => {
                                     value={values.firstName}
                                     onChange={handleChange}
                                     />
-                            {errors.firstName && <p className="errorText">{errors.firstName}</p>}
+                            {errors.firstName && <p className="error-text">{errors.firstName}</p>}
                             </div>                           
                             <div className="column">
                                 <label htmlFor="lastName" className="labels">Last Name</label>
@@ -38,7 +38,7 @@ const ResponsiveForm = () => {
                                 value={values.lastName}
                                 onChange={handleChange}
                                 />
-                            {errors.lastName && <p className="errorText">{errors.lastName}</p>}
+                            {errors.lastName && <p className="error-text">{errors.lastName}</p>}
                             </div>
                         </div>
                         <div className="row">
@@ -51,7 +51,7 @@ const ResponsiveForm = () => {
                                     value={values.phoneNumber}
                                     onChange={handleChange}
                                     /> 
-                                    {errors.phoneNumber && <p className="errorText">{errors.phoneNumber}</p>}  
+                                    {errors.phoneNumber && <p className="error-text">{errors.phoneNumber}</p>}  
                             </div>
                             <div className="column">
                                 <label htmlFor="phone" className="labels">Email Address</label>
@@ -62,7 +62,7 @@ const ResponsiveForm = () => {
                                     value={values.emailAddress}
                                     onChange={handleChange}
                                     /> 
-                                    {errors.emailAddress && <p className="errorText">{errors.emailAddress}</p>}  
+                                    {errors.emailAddress && <p className="error-text">{errors.emailAddress}</p>}  
                             </div>         
                         </div>
                         <div className="row">
@@ -96,7 +96,7 @@ const ResponsiveForm = () => {
                                             </span>
                                     </div>                                                                              
                                 </div>
-                                {errors.gender && <p className="errorText">{errors.gender}</p>}
+                                {errors.gender && <p className="error-text">{errors.gender}</p>}
                             </div>                            
                             <div className="column">
                                 <div>
@@ -223,7 +223,7 @@ const ResponsiveForm = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {errors.birth && <p className="errorText">{errors.birth}</p>}
+                                {errors.birth && <p className="error-text">{errors.birth}</p>}
                             </div>       
                         </div>
                         <div className="row">
@@ -243,7 +243,7 @@ const ResponsiveForm = () => {
                                             <option value="3">3 or more</option>  
                                         </select>   
                                     </div>
-                                {errors.dogNumberOfQuestion && <p className="errorText">{errors.dogNumberOfQuestion}</p>}
+                                {errors.dogNumberOfQuestion && <p className="error-text">{errors.dogNumberOfQuestion}</p>}
                             </div>
                             <div className="column">
                                 <label className="labels">Do you live flat or house?</label>
@@ -259,7 +259,7 @@ const ResponsiveForm = () => {
                                             <option value="house">House</option>                                    
                                         </select>   
                                     </div>
-                                {errors.flatOrHouseQuestion && <p className="errorText">{errors.flatOrHouseQuestion}</p>}
+                                {errors.flatOrHouseQuestion && <p className="error-text">{errors.flatOrHouseQuestion}</p>}
                             </div>
                         </div>
                         <div className="row">
@@ -273,11 +273,11 @@ const ResponsiveForm = () => {
                                     valuerows="3"
                                     >
                                     </textarea>
-                                {errors.textareaQuestion && <p className="errorText">{errors.textareaQuestion}</p>}
+                                {errors.textareaQuestion && <p className="error-text">{errors.textareaQuestion}</p>}
                             </div>   
                         </div>
                         <div className="button-container">
-                            <button className="button">REGISTRATION</button>
+                            <button className="registration-button">REGISTRATION</button>
                         </div>
                     </form>
         </div>
